@@ -1,0 +1,17 @@
+1:  H2 is in memory db used in this app
+
+2: After spring 2.3+ H2 generates random db name every time sever starts. To make it constant use below properties.
+    spring.datasource.url=jdbc:h2:mem:testdb
+    spring.data.jpa.repositories.bootstrap-mode=default
+
+3:  Advamntage of spring Jdbc
+        i- Less code compare to jdbc
+        ii-  Need not to handle exception manually. No changes of db connection loss.
+        iii-  Spring boot auto configuration, configure spring jdbc for us. Not required to do it manually.
+        iv - spring.h2.console.enabled=true is used for configuring H2 automatically. H2 should be there in classpath.
+
+
+
+
+
+
