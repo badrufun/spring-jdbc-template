@@ -28,7 +28,7 @@ public class SpringJdbcJpaApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		List<Person> list = personJdbcDao.findAll();
-		logger.info("Person : " + list);
+		logger.info("Persons : " + list);
 		logger.info("Person : " + personJdbcDao.findById(10001));
 		logger.info("Deleted id 10001 : " + personJdbcDao.deleteById(10001));
 		logger.info("Inserted id 10009 : " + personJdbcDao.save(
